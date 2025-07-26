@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Alarm App</string>
+    <string name="set_alarm">Set Alarm</string>
+    <string name="alarm_time">Alarm Time</string>
+    <string name="cancel_alarm">Cancel Alarm</string>
+    <string name="snooze">Snooze</string>
+    <string name="stop_alarm">Stop Alarm</string>
+    <string name="alarm_set_for">Alarm set for %s</string>
+    <string name="no_alarm_set">No alarm set</string>
+    <string name="flashlight_instruction">Turn flashlight on/off 5 times to stop alarm</string>
+    <string name="flashlight_count">Flashlight toggles: %d/5</string>
+    <string name="alarm_snoozed">Alarm snoozed for 5 minutes</string>
+    <string name="alarm_cancelled">Alarm cancelled</string>
+</resources>

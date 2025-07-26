@@ -1,0 +1,104 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/red"
+    android:padding="16dp"
+    tools:context=".AlarmRingingActivity">
+
+    <TextView
+        android:id="@+id/alarmTitle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="ALARM!"
+        android:textSize="48sp"
+        android:textStyle="bold"
+        android:textColor="@color/white"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        android:layout_marginTop="64dp" />
+
+    <TextView
+        android:id="@+id/currentTime"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textSize="32sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/alarmTitle"
+        android:layout_marginTop="32dp"
+        tools:text="08:30 AM" />
+
+    <TextView
+        android:id="@+id/flashlightInstruction"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/flashlight_instruction"
+        android:textSize="20sp"
+        android:textColor="@color/white"
+        android:textAlignment="center"
+        android:gravity="center"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/currentTime"
+        android:layout_marginTop="48dp" />
+
+    <TextView
+        android:id="@+id/flashlightCountText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Flashlight toggles: 0/5"
+        android:textSize="24sp"
+        android:textColor="@color/white"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flashlightInstruction"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/flashlightButton"
+        android:layout_width="200dp"
+        android:layout_height="200dp"
+        android:text="FLASHLIGHT"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        android:backgroundTint="@color/orange"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flashlightCountText"
+        android:layout_marginTop="32dp" />
+
+    <Button
+        android:id="@+id/snoozeButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/snooze"
+        android:textSize="18sp"
+        android:backgroundTint="@color/blue"
+        app:layout_constraintEnd_toStartOf="@id/stopButton"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/flashlightButton"
+        app:layout_constraintHorizontal_chainStyle="spread"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="8dp" />
+
+    <Button
+        android:id="@+id/stopButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:text="@string/stop_alarm"
+        android:textSize="18sp"
+        android:backgroundTint="@color/green"
+        android:enabled="false"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toEndOf="@id/snoozeButton"
+        app:layout_constraintTop_toTopOf="@id/snoozeButton"
+        android:layout_marginStart="8dp" />
+
+</androidx.constraintlayout.widget.ConstraintLayout>
